@@ -7,9 +7,21 @@
 //
 
 import UIKit
+import HomeLoginCore
 
 class RootViewController: UIViewController {
 
+    @IBAction func loginButton(_ sender: UIButton) {
+       
+    }
+    
+    @IBAction func passwordLabel(_ sender: UITextField) {
+        
+    }
+    
+    @IBAction func userNameLabel(_ sender: UITextField) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

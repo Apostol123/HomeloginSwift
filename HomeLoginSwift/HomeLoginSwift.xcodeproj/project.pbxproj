@@ -14,6 +14,7 @@
 		0739876822F58509003BCB44 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0739876622F58509003BCB44 /* RootViewController.swift */; };
 		0739876922F58509003BCB44 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0739876722F58509003BCB44 /* RootViewController.xib */; };
 		0739876C22F588C3003BCB44 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0739876B22F588C3003BCB44 /* logo.png */; };
+		0739878322F59208003BCB44 /* HomeLoginCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0739878222F59208003BCB44 /* HomeLoginCore.framework */; };
 		2E1FBF3D2F5720DC2F173F7C /* Pods_HomeLoginSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15CBFBD6F1940C9842710F3 /* Pods_HomeLoginSwiftTests.framework */; };
 		418D586FA77E57AC4729354B /* Pods_HomeLoginSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58CCB45513787DC6AB800F3 /* Pods_HomeLoginSwift.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		0739876622F58509003BCB44 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		0739876722F58509003BCB44 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		0739876B22F588C3003BCB44 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../../Downloads/logo.png; sourceTree = "<group>"; };
+		0739878222F59208003BCB44 /* HomeLoginCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeLoginCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658D5887CDA1A26CF1E785B6 /* Pods-HomeLoginSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeLoginSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-HomeLoginSwiftTests/Pods-HomeLoginSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		919C67D448473118BC29A363 /* Pods-HomeLoginSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeLoginSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-HomeLoginSwiftTests/Pods-HomeLoginSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		A15CBFBD6F1940C9842710F3 /* Pods_HomeLoginSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeLoginSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0739878322F59208003BCB44 /* HomeLoginCore.framework in Frameworks */,
 				418D586FA77E57AC4729354B /* Pods_HomeLoginSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,13 +130,13 @@
 				658D5887CDA1A26CF1E785B6 /* Pods-HomeLoginSwiftTests.debug.xcconfig */,
 				919C67D448473118BC29A363 /* Pods-HomeLoginSwiftTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		8596B53FF514907DC8A1BF11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0739878222F59208003BCB44 /* HomeLoginCore.framework */,
 				E58CCB45513787DC6AB800F3 /* Pods_HomeLoginSwift.framework */,
 				A15CBFBD6F1940C9842710F3 /* Pods_HomeLoginSwiftTests.framework */,
 			);

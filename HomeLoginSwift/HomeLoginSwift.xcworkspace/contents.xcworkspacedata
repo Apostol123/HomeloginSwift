@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HomeLoginCore/HomeLoginCore.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:HomeLoginSwift.xcodeproj">
    </FileRef>
    <FileRef
