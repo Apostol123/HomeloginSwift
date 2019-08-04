@@ -11,5 +11,6 @@ import Foundation
 public struct User: Decodable {
     
     public let username: String
-    public let password: Int
+    public let id: Int
+    
 }

@@ -10,17 +10,35 @@ import UIKit
 import HomeLoginCore
 
 class RootViewController: UIViewController {
+    
+    private  let validation = ApiDataSouce()
+    
+
 
     @IBAction func loginButton(_ sender: UIButton) {
        
+        validation.getUsers(name: userNameLabel.text!, password: passwordLabel.text!) { succes in
+            if succes {
+                let tabBarMenuView =  TabBarViewController()
+                
+               
+               
+                tabBarMenuView.userId = self.passwordLabel.text
+                
+               self.present(tabBarMenuView, animated: true)
+                
+                
+                  
+            }
+            
+        }
     }
     
-    @IBAction func passwordLabel(_ sender: UITextField) {
-        
-    }
+    @IBOutlet weak var userNameLabel: UITextField!
     
-    @IBAction func userNameLabel(_ sender: UITextField) {
-    }
+    
+    @IBOutlet weak var passwordLabel: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

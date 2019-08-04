@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
        self.window = UIWindow(frame: UIScreen.main.bounds)
         
+   
         self.window?.rootViewController = RootViewController(nibName: nil, bundle: nil)
+        
         
         self.window?.makeKeyAndVisible()
         

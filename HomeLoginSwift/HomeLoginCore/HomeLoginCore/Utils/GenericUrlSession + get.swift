@@ -16,14 +16,18 @@ public extension URLSession {
             if let error = error{
                 print("Systerm error: \(error.localizedDescription)")
            
+                DispatchQueue.main.sync {
                     callback(nil)
+                }
                 
                 return
             }
             
             guard let httpResponse = response as? HTTPURLResponse else {
                 print("Invalid Response")
-                callback(nil)
+                DispatchQueue.main.sync {
+                    callback(nil)
+                }
                 return
             }
             switch httpResponse.statusCode{
@@ -31,17 +35,25 @@ public extension URLSession {
                 guard let newData = data,
                     let result = try? JSONDecoder().decode(type, from: newData) else {
                         print("Not able to decode")
-                        callback(nil)
+                        DispatchQueue.main.sync {
+                            callback(nil)
+                        }
                         return
                 }
-                callback(result)
+                DispatchQueue.main.sync {
+                    callback(result)
+                }
                 
             case 404:
                 print("Resource not found: \(url.absoluteURL)")
-                callback(nil)
+                DispatchQueue.main.sync {
+                    callback(nil)
+                }
                 
             default: print("Undefined Error")
-            callback(nil)
+            DispatchQueue.main.sync {
+                callback(nil)
+                }
             }
             
         }
